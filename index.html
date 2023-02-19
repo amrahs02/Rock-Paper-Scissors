@@ -1,27 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body> 
-    <div class="main">
-        <div class="main1">
-            <h2>ROCK PAPER AND SCISSORS</h2>
-            <h2 id="computer_choice"></h2>
-            <h2 id="user_choice"></h2>
-            <h2 id="result"></h2>
-            
-            <div class="buttonx">
-                <button id="Rock">Rock</button>
-                <button id="Paper">Paper</button>
-                <button id="Scissors">Scissors</button>
-            </div>
-        </div>
-    </div>
-    <script src="app.js"></script>
-</body>
-</html>
+body{
+    background-color: white;
+    height: 800px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border-radius: 15px; */
+    /* padding: %; */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    width: 50%;
+    border-radius: 100px;
+}
+.main1{
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #222831;
+
+}
+h2:nth-child(1){
+    text-align: center;
+}
+h2{
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 30px;
+    padding: 2%;
+    font-size: 30px;
+    width: 90%;
+    margin: 3%;
+}
+
+
+#computer_choice::before{
+    content: "Computer Choice : ";
+}
+#user_choice::before{
+    content: "Your Choice : ";
+}
+#result::before{
+    content: "Result : ";
+}
+button{
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 30px;
+    padding: 2%;
+    font-size: 30px;
+    width: 92%;
+    margin: 2%;
+}
+button:nth-child(1){
+    background-color: rgb(211, 108, 96);
+}
+button:nth-child(2){
+    background-color: rgb(33, 141, 114);
+}
+button:nth-child(3){
+    background-color: rgb(146, 160, 39) ;
+}
+.buttonx{
+    display: flex;
+}
+
+@media (max-width: 1170px){
+    .main{
+        width: 70%;
+    }
+    h2{
+        margin: 4%;
+        width: 84%;
+        padding: 4%;
+    }
+}
+@media (max-width: 900px){
+    .main{
+        width: 80%;
+    }
+    h2{
+        font-size: 30px;
+        width: 86%;
+        margin: 4%;
+        padding: 4%;
+    }
+    button{
+        font-size: 20px;
+    }
+}
+@media (max-width: 750px){
+    .main{
+        width: 90%;
+    }
+        h2{
+        font-size: 20px;
+    }
+}
+@media (max-width: 350px){
+    .main1{
+        width: 100%;
+        height: 400px;
+    }
+        h2{
+        font-size: 20px;
+    }
+    .button{
+        padding: 1%;
+    }
+}
