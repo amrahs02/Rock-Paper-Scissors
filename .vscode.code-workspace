@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../.vscode"
+		},
+		{
+			"path": "../../../CODES"
+		},
+		{
+			"path": "../../../CREATED_BY_CHATGPT"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JAVASCRIPT",
+		"liveServer.settings.port": 5501
+	}
+}
